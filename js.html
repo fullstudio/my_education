@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Js</title>
+	</head>
+	<body>
+		<!-- <script type="text/javascript">
+			var number = 21;
+			var string = "Hello World!"
+			document.write("Вывести приветствие = " + string + "<br/>" + "Мне = " + number + " год");
+		</script>
+		<br/>
+		<script type="text/javascript">
+		'use strict';
+			var x;
+			x = 5;
+			var y;
+			y = 8;
+			var  result;
+			result = x - y;
+			document.write(x + " - " + y + " = " + result);
+			document.write("</br>");
+
+			var str_1 = 12;
+			var str_2 = 15;
+			document.write(Number(str_2) + (str_1));
+			document.write("</br>");
+			// true правда, false не правда ; < > == => =< !=
+			var bool;
+			var z = 6;
+			var d = 8;
+			bool = z > d; 
+			document.write(bool);
+			document.write("</br>");
+
+			document.write(10 + " % " + 7 + " = " + (10%7));
+			// % значение 10 от 7
+		</script>
+		<br/>
+		<script type="text/javascript">
+			var x = 4;
+			var y = 5;
+			var bool = false;
+			if (x > y) {
+				document.write("условие соблюдается");
+				document.write("</br>");
+			}else document.write("условие не соблюдается");
+			document.write("</br>");
+
+			if (x > y) {
+				document.write("x > y");
+			}else if (x == y) {
+				document.write("x = y");
+			}else {
+				document.write("x < y");
+				}
+			document.write("</br>");
+
+			var result = 1;
+			switch(result) {
+				case 1: document.write("resuly = 1"); break;
+				case 5: document.write("resuly = 2"); break;
+				case 3: document.write("resuly = 3"); break;
+				case 4: document.write("resuly = 4"); break;
+				case 5: document.write("resuly = 5"); break;
+				default: document.write("resuly > 5");
+			}
+			document.write("</br>");
+
+			x > y ? document.write("YES") : document.write("NO");
+			document.write("</br>");
+			// && - оператор 'и', амперсант для написания двух условий
+			if (x < y && bool != true) {
+				document.write("x > y");
+			};
+			document.write("</br>");
+			// || - оператор 'или'
+			if (x < y || bool == true) {
+				document.write("x > y");
+			};
+		</script>
+		</br>
+		<script type="text/javascript">
+		for (var i = 0; i < 10; i++) {
+			document.write(i + "</br>")
+		};
+		document.write("</br>");
+		// continue - продолжает цикл при выполнения условия 
+		// break - останавливает цикл
+		for (var i = 0; i < 10; i++) {
+			if (i %3 == 0 && i != 0) continue;
+			if (i == 8) break;
+			document.write(i + "</br>")
+		};
+		document.write("</br>");
+
+		var x = 0;
+		var y = 0;
+		while (x < 10) {
+			x++;
+			y+= 2;
+			document.write( x + "</br>");
+			document.write( y + "</br>");
+		};
+		document.write("</br>");
+
+		// этот цикл обязательно один раз сработает 100% даже если значение false не правда
+		var s = 1000;
+		do {
+			document.write("Цикл сработал");
+		} while(s < 100);
+		document.write("</br>");
+		</script>
+ 		<script type="text/javascript">
+		//confirm - просит вас подтверждить, alert - просто всплывающее окно, prompt - выводит поле записи, с подтверждением.
+		var persone;
+		// alert("Hello " + persone);
+		if(confirm("A you sure?")){
+			persone = prompt("Hi what is you name");
+			alert("Hello " + persone);
+		} else 
+			alert("Not " + persone);
+		</script> -->
+
+		<script type="text/javascript">
+			// document.write("</br>");
+			var arr = new Array("str", 1.23, 10, false);
+			//document.write(arr[0] + "</br>" + arr[2]);
+			for (var i = 0; i < arr.length; i++) {
+				document.write(arr[i] + "</br>");
+			}
+			var arr = new Array();
+			for (var i = 0; i < 10; i++) {
+				arr[i] = i * 3;
+				document.write(arr[i] + "<br>");
+			}
+			for
+		</script>
+	</body>
+</html>

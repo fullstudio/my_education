@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flexbox на практике</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background: #fefefe; 
+				margin: 0; 
+				padding: 0;
+				font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+				color: #272727;
+			}
+			img{
+				margin: 0; 
+				padding: 0; 
+				vertical-align: middle; 
+				border: none;
+			}
+			.main{
+				margin: 20px; 
+				border: 1px solid #ccc; 
+				padding: 20px; 
+				background: #fff; 
+				border-radius: 3px;
+			}
+			.bl{
+				padding: 5px 10px; 
+				border:1px solid #ddd; 
+				background: #fffde1; 
+				border-radius: 3px;
+				margin: 20px;
+			}
+			.main{
+				display: flex;
+				height: 500px;
+				max-width: 1000px;
+				margin: 20px auto;
+				/* flex-direction: column; */
+				 /*flex-direction: row; */
+				 /*flex-direction: column-reverse; */
+				/*flex-direction: row-reverse; */
+				/* justify-content: flex-and; */
+				/* justify-content: space-between; */
+				/* justify-content: space-around; */
+				justify-content: center;
+				/*align-items: flex-end;*/
+				/* align-items: flex-start; */
+				align-items: stretch; 
+				/*align-items: baseline;*/
+				/*align-items: center;*/
+				/* flex-wrap: wrap; */
+				/* flex-wrap: wrap-reverse; */
+				/* align-content: center; */
+				/* align-content: flex-start; */
+				align-content: stretch;
+				/* flex-flow: row wrap; */
+				flex-flow: row wrap;
+
+			}
+			.bl{
+				/* width: 400px; */ 
+				/*height: 150px;*/
+				/*margin: auto;*/
+				/*padding: 0;
+				margin: 0;
+				border: 0;*/
+				/*flex-basis: 500px;
+				flex-grow: 1;
+				flex-shrink: 1;*/
+				flex: 1 1 200px;
+				text-align: center;
+			}
+			.fl1{background: red; /*flex-grow: 6; flex-shrink: 3;*/ /*align-self: center;*/ order: 5; flex-basis:300px;}
+			.fl2{background: green; /*flex-grow: 4; flex-shrink: 2;*/ order: 3; flex-basis:150px;}
+			.fl3{background: blue; /*align-self: flex-start;*/order:1; flex-basis:100%;}
+			.fl4{background: grey; /*align-self: flex-end;*/flex-basis:100%}
+			.fl5{background: white; order: 6; flex-basis:300px}
+			.fl6{background: yellow; order: 4; flex-basis:400px;}
+		</style>
+	</head>
+
+	<body>
+	
+		<div class="main">
+			<div class="bl fl1"><b> ПОДВАЛ 1</b><br>1 This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</div>
+			<div class="bl fl2"><b> ЛЕВЫЙ САЙТБАР</b><br>2 This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.</div>
+			<div class="bl fl3"><b>МЕНЮ</b><br>3 1 This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</div>
+			<div class="bl fl4"><b>ШАПКА</b><br>4 1 This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</div>
+			<div class="bl fl5"><b>ПОДВАЛ</b><br>5 1 This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</div>
+			<div class="bl fl6"><b>КСНТЕНТ</b><br>6 1 This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</div>
+		</div>
+	
+	</body>
+</html>
